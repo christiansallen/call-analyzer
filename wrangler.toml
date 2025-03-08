@@ -1,0 +1,6 @@
+name = "call-analyzer"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "pnpm install && pnpm --filter @call-analyzer/web build"
+output_directory = "apps/web/dist"
