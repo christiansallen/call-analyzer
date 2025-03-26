@@ -4,28 +4,22 @@
   "private": true,
   "main": "./src/index.ts",
   "types": "./src/index.ts",
-  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "drizzle-kit generate:pg",
-    "push": "drizzle-kit push:pg",
-    "studio": "drizzle-kit studio"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/drizzle/migrate.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
     "drizzle-orm": "^0.40.0",
     "drizzle-zod": "^0.7.0",
+    "pg": "^8.13.3",
     "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/pg": "^8.11.11",
     "dotenv": "^16.4.7",
     "drizzle-kit": "^0.30.5",
-    "pg": "^8.13.3",
-    "pg-core": "^0.1.15",
+    "tsx": "^4.19.3",
     "typescript": "latest"
   }
 }
